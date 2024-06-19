@@ -23,7 +23,44 @@ passed = false;
 */
 // **sua lógica a partir daqui**
 
+if(gender === "male"){ //Testa o genero do candidato 
+    if(height >= 1,70){ // testa a altura do candido
+        if(barReps >= 6 || barSeconds >= 15){ // testa a quantidade de repetições em barra e a duração
+            if(abs >= 41){ // testa a quantidade de abdominais feitos
+                if((runDistance >= 3000 && runTime <= 720) || (runDistance>= 5000 && runTime<= 1200)){ // testa a quantidade de km corridos em minitos (km viraram 'metros' e minutos viraram 'segundos')
+                    if((swimDistance >= 100 && swimTime <= 60) || (diveTime <=30)){ // a distância percorrida em metros dentro de 1 minuto ou no máximo 30 segundos de mergulho
+                        passed = true;
+                    }
 
+                
+                }
+            }
+        }
+    
+    }
+    
+}
+
+
+
+
+if(gender === "female"){ //Testa o genero do candidato
+    if(height >= 1,60){ // testa a altura do candido
+        if(barReps >= 5 || barSeconds >= 12){ // testa a quantidade de repetições em barra e a duração
+            if(abs >= 41){ // testa a quantidade de abdominais feitos
+                if(runDistance >= 4000 && runTime <= 900 || runDistance>= 6000 && runTime<= 1320){ // testa a quantidade de km corridos em minitos (km viraram 'metros' e minutos viraram 'segundos')
+                    if((swimDistance >= 100 && swimTime <= 60) || (diveTime <=30)){ // a distância percorrida em metros dentro de 1 minuto ou no máximo 30 segundos de mergulho
+                        passed = true;
+                    }
+
+                
+                }
+            }
+        }
+    
+    }
+    
+}
 
 /*
     Seu código deve conter apenas UM console.log, e ele deve ser o abaixo.
